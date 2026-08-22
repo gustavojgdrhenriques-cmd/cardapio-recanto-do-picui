@@ -6,35 +6,79 @@
     <title>Recanto do Picuí</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Recanto do Picuí</h1>
-    <p>A MELHOR carne de sol do BRASIL!</p>
 
-    <h2>Nossas especialidades</h2>
-    <ul>
-        <li>Carne de sol</li>
-        <li>Vó sinhá</li>
-    </ul>
+    <header>
+        <h1>Bem-vindo ao Recanto do Picuí</h1>
+        <p>A MELHOR carne de sol do BRASIL!</p>
+    </header>
 
-    <table>
-        <tr>
-            <th>Prato</th>
-            <th>Preço</th>
-        </tr>
-        <tr>
-            <td>Carne de sol</td>
-            <td>R$ 79,90</td>
-        </tr>
-        <tr>
-            <td>Vó sinhá</td>
-            <td>R$ 59,90</td>
-        </tr>
-    </table>
+    <main>
+        <section id="cardapio">
+            <h2>Nossas Especialidades</h2>
+            <ul>
+                <li>Carne de sol</li>
+                <li>Vó sinhá</li>
+            </ul>
 
-    <p>
-        Saiba mais sobre nossos pratos e tradição na 
-        <a href="https://pt.wikipedia.org/wiki/Culin%C3%A1ria_do_Nordeste_do_Brasil" target="_blank" rel="noopener noreferrer">página sobre culinária nordestina</a>.
-    </p>
+            <table>
+                <tr>
+                    <th>Prato</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Carne de sol</td>
+                    <td>R$ 79,90</td>
+                </tr>
+                <tr>
+                    <td>Vó sinhá</td>
+                    <td>R$ 59,90</td>
+                </tr>
+            </table>
 
-    <img src="assets/images/recantodopicui.webp" alt="Imagem do restaurante recanto do picui"> 
+            <p>
+                Saiba mais sobre nossos pratos na 
+                <a href="https://pt.wikipedia.org/wiki/Culin%C3%A1ria_do_Nordeste_do_Brasil" target="_blank" rel="noopener noreferrer">página sobre culinária nordestina</a>.
+            </p>
+
+            <img src="assets/images/recantodopicui.webp" alt="Imagem do restaurante recanto do picui">
+        </section>
+
+        <section id="reserva">
+            <h2>Faça sua Reserva</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados da Reserva</legend>
+
+                    <p>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail de contato:</label>
+                        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="data-reserva">Data da reserva:</label>
+                        <input type="date" id="data-reserva" name="data_reserva" required>
+                    </p>
+
+                    <p>
+                        <label for="pessoas">Quantidade de pessoas (1 a 10):</label>
+                        <input type="number" id="pessoas" name="pessoas" min="1" max="10" value="2" required>
+                    </p>
+
+                    <button type="submit">Confirmar Reserva</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Recanto do Picuí - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
